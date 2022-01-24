@@ -1,8 +1,10 @@
 const List = () => {
     return (
         <>
-            <div className="list">
-                
+            <div className="lists">
+                <div className="list">
+                    
+                </div>
             </div>
         </>
     );
