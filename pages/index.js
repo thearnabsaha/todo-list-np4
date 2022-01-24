@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Header from './Components/Header';
-import Input from './Components/input';
+import Input from './Components/Input';
 
 const index = () => {
   return (

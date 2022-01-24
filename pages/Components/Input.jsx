@@ -13,4 +13,3 @@ const Input = () => {
 }
 
 export default Input;
-<MdSend/>
