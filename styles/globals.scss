@@ -10,3 +10,27 @@
     font-family: 'Roboto', sans-serif;
 }
 //?################################# HEADER STYLING #######################################
+// #2d34363b
+// #2d34368f
+.header{
+    h1{
+        font-size: 4rem;
+        background-color: #2d3436;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+.footer{
+    margin-top: 6rem;
+    h3{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-size: 2rem;
+        background-color: #2d3436;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+}
