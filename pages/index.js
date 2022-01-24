@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Components/Header';
+import Input from './Components/input';
 
 const index = () => {
   return (
@@ -8,6 +9,7 @@ const index = () => {
         <title>TAS TODO</title>
       </Head>
       <Header/>
+      <Input/>
     </>
   );
 }
