@@ -5,7 +5,7 @@ const Input = () => {
             <div className="input">
                 <form action="">
                     <input type="text" placeholder="Add Your Tasks..."/>
-                    <button type="submit"><MdSend/></button>
+                    <button type="submit"><MdSend className="send"/></button>
                 </form>
             </div>
         </>

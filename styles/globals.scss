@@ -36,3 +36,24 @@
     }
 }
 //?################################# INPUT STYLING #######################################
+.input{
+    form{
+        display: flex;
+        justify-content: center;
+        input{
+            width: 300px;
+            height: 40px;
+            font-size: 1.5rem;
+            margin: 2rem 0rem;
+            border-radius: .5rem;
+        }
+        button{
+            height: 40px;
+            width: 50px;
+            margin: 2rem 0rem;
+            .send{
+                font-size: 3rem;
+            }
+        }
+    }
+}
