@@ -8,7 +8,12 @@ const Input = () => {
     }
     const handleSubmit =(e) => {
         e.preventDefault()
-        console.log(task);
+        if(task){
+            const newRecord={task:task,id:new Date().getTime()}
+            setRecords([...records,newRecord])
+        }else{
+            alert("Input is empty")
+        }
         setTask("")
     }
     return (
@@ -19,6 +24,13 @@ const Input = () => {
                     <button type="submit"><MdSend className="send"/></button>
                 </form>
             </div>
+            {
+                records.map((e)=>{
+                    return(
+                        <h1 key={e.id}>{e.task}</h1>
+                    )
+                })
+            }
         </>
     );
 }
