@@ -6,8 +6,8 @@ const List = () => {
                 <div className="list">
                     <div className="task">
                         <h1>Arnab Saha Is Best...</h1>
-                        <button><MdOutlineDriveFileRenameOutline/></button>
-                        <button><MdOutlineDeleteOutline/></button>
+                        <button><MdOutlineDriveFileRenameOutline className="rename"/></button>
+                        <button><MdOutlineDeleteOutline className="remove"/></button>
                     </div>
                 </div>
             </div>

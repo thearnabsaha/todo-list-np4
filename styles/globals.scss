@@ -10,8 +10,6 @@
     font-family: 'Roboto', sans-serif;
 }
 //?################################# HEADER STYLING #######################################
-// #2d34363b
-// #2d34368f
 .header{
     h1{
         font-size: 4rem;
@@ -38,6 +36,7 @@
 //?################################# INPUT STYLING #######################################
 .input{
     form{
+        margin: 1rem;
         display: flex;
         justify-content: center;
         input{
@@ -46,7 +45,6 @@
             height: 40px;
             font-size: 1.5rem;
             margin: 2rem 0rem;
-            // border-radius: .5rem;
             border: none;
             padding: 1rem;
             outline: none;
@@ -56,7 +54,6 @@
             &:active{
                 background-color: hsl(193, 9%, 29%);
             }
-            background-color: #fff;
             border: none;
             height: 40px;
             width: 50px;
@@ -67,6 +64,114 @@
                 font-size: 3rem;
                 color: #fff;
             }
+        }
+    }
+}
+//?################################# LISTS STYLING #######################################
+.lists{
+    .list{
+        margin: 1rem;
+        .task{
+            display: flex;
+            justify-content: center;
+            h1{
+                box-shadow: 0px 0px 10px 0px rgba(45, 52, 54, 0.257);
+                font-size: 2rem;
+                width: 600px;
+                height: 50px;
+                padding: 1rem;
+                margin: 1rem 0rem;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            button{
+                box-shadow: 0px 0px 10px 0px rgba(45, 52, 54, 0.257);
+                margin: 1rem 0rem;
+                width: 60px;
+                height: 50px;
+                background-color: #2d3436;
+                outline: none;
+                border: none;
+                border: 1px solid #fff;
+                &:active{
+                    background-color: hsl(193, 9%, 29%);
+                }
+                .remove,.rename{
+                    font-size: 3rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+//?################################# RESPONSIVENESS #######################################
+@media(max-width:735px){
+    .lists{
+        .list{
+            .task{
+                h1{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:535px){
+    .lists{
+        .list{
+            .task{
+                h1{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:535px){
+    .lists{
+        .list{
+            .task{
+                h1{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:435px){
+    .input{
+        form{
+            button{
+                .send{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .lists{
+        .list{
+            .task{
+                h1{
+                    width: 300px;
+                    height: 40px;
+                    font-size: 1.5rem;
+                }
+                button{
+                    width: 50px;
+                    height: 40px;
+                    .remove,.rename{
+                        font-size: 2rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:350px){
+    .header{
+        h1{
+            font-size: 3rem;
         }
     }
 }
